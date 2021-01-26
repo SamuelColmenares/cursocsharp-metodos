@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasesYMetodos", "ClasesYMetodos\ClasesYMetodos.csproj", "{682D1D8F-A05B-4163-AC27-E4C80E1096DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClasesYMetodos", "ClasesYMetodos\ClasesYMetodos.csproj", "{682D1D8F-A05B-4163-AC27-E4C80E1096DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodosAsincronos", "MetodosAsincronos\MetodosAsincronos.csproj", "{FB926F98-9D60-40AA-A130-22F1834B46FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{682D1D8F-A05B-4163-AC27-E4C80E1096DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{682D1D8F-A05B-4163-AC27-E4C80E1096DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{682D1D8F-A05B-4163-AC27-E4C80E1096DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB926F98-9D60-40AA-A130-22F1834B46FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB926F98-9D60-40AA-A130-22F1834B46FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB926F98-9D60-40AA-A130-22F1834B46FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB926F98-9D60-40AA-A130-22F1834B46FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
