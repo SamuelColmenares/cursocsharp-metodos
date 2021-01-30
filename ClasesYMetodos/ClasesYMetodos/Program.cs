@@ -1,16 +1,15 @@
 ﻿using System;
-
 namespace ClasesYMetodos
 {
     class Program : Carro
     {
         delegate double Suma(float numA, float numB1); //<float, float, double>
 
-        
+
 
         static void Main(string[] args)
         {
-            Program carro = new Program();
+            /*Program carro = new Program();
             carro.Arrancar();
             carro.AdicionarGasolina(5);
             int manejar = carro.Manejar(5, 10);
@@ -31,7 +30,7 @@ namespace ClasesYMetodos
             double res = add(11.11f, 4.12f);
             Console.WriteLine("- {0} ", res);
 
-            Action<string,int,bool> operacion = carro.Operacion;
+            Action<string, int, bool> operacion = carro.Operacion;
             Func<int, int, double> Suma = (int valA, int valB) =>
             {
                 Console.WriteLine("valr a: {0}", valA);
@@ -47,16 +46,60 @@ namespace ClasesYMetodos
 
             Suma(0, 1);
 
+            Func<int,int> funcion = (5) =>{
+                return 5 + 2;
+            }
+
+            carro.Calcular((int val) => val + 2, 3, true);
+
+            //------------------------------------ clases
+            Persona persona = new Persona();
+            persona.Edad = 15;
+            Persona.Estatica = 10;
+
+            Persona persona2 = new Persona();
+            persona2.Imprimir();
+
+            Console.WriteLine($"Valor {Persona.General()} --");
+
+            Console.WriteLine($"Valor al cuadrado: {persona.Edad.ElevarAlCuadrado()} --");
+
+            int variable = 4;
+            Console.WriteLine($"Var al cuadrado: {variable.ElevarAlCuadrado()} --");
+            persona.Imprimir();*/
+
+            Persona persona3 = new Persona();
+            Persona persona4 = new Persona("Samuel");
+            Persona persona5 = new Persona("Samuel","Colmenares");
+
+            Console.WriteLine($"Per3: {persona3.NombreCompleto()}");
+            Console.WriteLine($"Per4: {persona4.NombreCompleto()}");
+            Console.WriteLine($"Per5: {persona5.NombreCompleto()}");
+
+            Console.WriteLine($"Per3: {persona3.NombreProfesion()}");
+            persona4.Profesion = "Estudiante";
+            Console.WriteLine($"Per4: {persona4.NombreProfesion()}");
+
+
+
+
 
 
         }
 
-        public void Calcular (Action<int> action, int valA, bool a)
+        public void Calcular(Func<int, int> action, int valA, bool a)
         {
             if (a)
             {
-                action(valA);
+                int res = action(valA) + valA;
+                Console.WriteLine(" Resultado suma : {0}", res);
             }
+            else
+            {
+                Console.WriteLine(" No ingreso al if");
+            }
+
+
         }
 
         public void Operacion(string dato, int dato2, bool val)
@@ -66,7 +109,7 @@ namespace ClasesYMetodos
 
         public double ImplSuma(float valA, float valorB)//<float, float, double>
         {
-            
+
             return valA + valorB;
         }
 
